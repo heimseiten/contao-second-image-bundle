@@ -1,0 +1,7 @@
+.media--below, .media--above {
+	&.media--second_image {
+		display: flex;
+		flex-wrap: wrap;
+		.rte { width: 100%; }
+	}
+}

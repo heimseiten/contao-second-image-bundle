@@ -1,0 +1,18 @@
+{% extends "@Contao/content_element/text.html.twig" %}
+
+{% if data.addImage_2 %}
+    {% set attributes = attrs(attributes|default).addClass('media--second_image') %}
+{% endif %}
+
+{% block figure_component %}
+    {{ parent() }}
+        {% if data.addImage_2 %}
+            {{ contao_figure(
+                data.singleSRC_2, 
+                data.size_2, 
+                { 
+                    options: { attr: { class: 'second_image' } }
+                }
+            ) }}
+        {% endif %}
+{% endblock %}  
