@@ -1,2 +1,2 @@
-# Welcome to Contao Second Image Bundle
-This bundle is still under construction.
+# Contao Second Image Bundle
+Bietet die Möglichkeit, ein zweites Bild im Content-Element Text einzufügen.
