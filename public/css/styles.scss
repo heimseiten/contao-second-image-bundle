@@ -5,5 +5,15 @@
 		.rte { width: 100%; }
 	}
 }
-.content-text.media--second_image.media--right > figure.second_image { margin-left: 5px; }
-.content-text.media--second_image.media--left > figure:not(.second_image) { margin-right: 5px; }
+
+.content-text.media--second_image.media--right > figure.second_image { margin-left: 60px; }
+.content-text.media--second_image.media--right > figure:not(.second_image) { margin-left: 40px; }
+
+.content-text.media--second_image.media--left > figure.second_image { margin-right: 60px; }
+.content-text.media--second_image.media--left > figure:not(.second_image) { margin-right: 40px; }
+
+.content-text.media--second_image.media--above > figure.second_image { margin-right: 0px; }
+.content-text.media--second_image.media--above > figure:not(.second_image) { margin-right: 40px; }
+
+.content-text.media--second_image.media--below > figure.second_image { margin-right: 0px; }
+.content-text.media--second_image.media--below > figure:not(.second_image) { margin-right: 40px; }
