@@ -1,3 +1,8 @@
+:root {
+	--second_image_margin: 40px;
+	--text_image_margin: 60px;
+}
+
 .media--below, .media--above {
 	&.media--second_image {
 		display: flex;
@@ -6,14 +11,14 @@
 	}
 }
 
-.content-text.media--second_image.media--right > figure.second_image { margin-left: 60px; }
-.content-text.media--second_image.media--right > figure:not(.second_image) { margin-left: 40px; }
+.content-text.media--second_image.media--right > figure.second_image { margin-left: var(--text_image_margin); }
+.content-text.media--second_image.media--right > figure:not(.second_image) { margin-left: var(--second_image_margin); }
 
-.content-text.media--second_image.media--left > figure.second_image { margin-right: 60px; }
-.content-text.media--second_image.media--left > figure:not(.second_image) { margin-right: 40px; }
+.content-text.media--second_image.media--left > figure.second_image { margin-right: var(--text_image_margin); }
+.content-text.media--second_image.media--left > figure:not(.second_image) { margin-right: var(--second_image_margin); }
 
 .content-text.media--second_image.media--above > figure.second_image { margin-right: 0px; }
-.content-text.media--second_image.media--above > figure:not(.second_image) { margin-right: 40px; }
+.content-text.media--second_image.media--above > figure:not(.second_image) { margin-right: var(--second_image_margin); }
 
 .content-text.media--second_image.media--below > figure.second_image { margin-right: 0px; }
-.content-text.media--second_image.media--below > figure:not(.second_image) { margin-right: 40px; }
+.content-text.media--second_image.media--below > figure:not(.second_image) { margin-right: var(--second_image_margin); }
