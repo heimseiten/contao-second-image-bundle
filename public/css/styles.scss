@@ -22,3 +22,10 @@
 
 .content-text.media--second_image.media--below > figure.second_image { margin-right: 0px; }
 .content-text.media--second_image.media--below > figure:not(.second_image) { margin-right: var(--second_image_margin); }
+
+.media--second_image.BilderÜbereinander {
+	figure:not(.second_image) { z-index: 2; }
+	figure.second_image { z-index: 1; }
+	&.media--left figure:not(.second_image) { margin-right: -30px; }
+	&.media--right figure.second_image { margin-left: -30px; }
+}
