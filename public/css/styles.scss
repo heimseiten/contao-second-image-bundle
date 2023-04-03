@@ -50,6 +50,8 @@
  	figure > figure:not(.second_image) { z-index: 2; }
  	figure > figure.second_image { z-index: 1; }
 	&.linksHinten figure > figure.second_image { z-index: 3; }
+	&.media--above figure > figure:not(.second_image),
+	&.media--below figure > figure:not(.second_image),
 	&.media--left figure > figure:not(.second_image) { margin-right: -30px; }
 	&.media--right figure > figure.second_image { margin-left: -30px; }
 }
