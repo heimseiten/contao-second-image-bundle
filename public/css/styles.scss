@@ -24,14 +24,20 @@
 .content-text.text_in_center_of_image .wrapper_images figure { flex-shrink: 1; }
 
 .content-text.media--second_image.media--right > figure > figure.second_image { margin-left: var(--text_image_margin); }
-.content-text.media--second_image.media--right > figure > figure:not(.second_image) { margin-left: var(--second_image_margin); }
+.content-text.media--second_image.media--right > figure > figure:not(.second_image) { margin-left: var(--second_image_margin); 
+	@media(max-width:1023px){ margin-left: 0; }
+}
 
-.content-text.media--second_image.media--left > figure > figure.second_image { margin-right: var(--text_image_margin); }
+.content-text.media--second_image.media--left > figure > figure.second_image { margin-right: var(--text_image_margin); 
+	@media(max-width:1023px){ margin-right: 0; }
+}
 .content-text.media--second_image.media--left > figure > figure:not(.second_image) { margin-right: var(--second_image_margin); }
 
+.content-text.media--second_image.media--above > figure { margin-bottom: 1em; }
 .content-text.media--second_image.media--above > figure > figure.second_image { margin-right: 0px; }
 .content-text.media--second_image.media--above > figure > figure:not(.second_image) { margin-right: var(--second_image_margin); }
 
+.content-text.media--second_image.media--below > figure { margin-top: 1em; }
 .content-text.media--second_image.media--below > figure > figure.second_image { margin-right: 0px; }
 .content-text.media--second_image.media--below > figure > figure:not(.second_image) { margin-right: var(--second_image_margin); }
 
