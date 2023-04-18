@@ -68,19 +68,8 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['caption_2'] = [
     'sql'                     => "varchar(255) NOT NULL default ''"
 ];
 
-$GLOBALS['TL_LANG']['tl_content']['addImage_2'] = ['Ein zweites Bild hinzufügen', ''];
-$GLOBALS['TL_LANG']['tl_content']['singleSRC_2'] = ['Quelldatei', ''];
-$GLOBALS['TL_LANG']['tl_content']['imageUrl_2'] = ['Bildlink-Adresse', ''];
-$GLOBALS['TL_LANG']['tl_content']['imageTitle_2'] = ['Bildtitel', ''];
-$GLOBALS['TL_LANG']['tl_content']['alt_2'] = ['Alternativer Text', ''];
-$GLOBALS['TL_LANG']['tl_content']['size_2'] = ['Bildgröße', ''];
-$GLOBALS['TL_LANG']['tl_content']['caption_2'] = ['Bildunterschrift', ''];
-$GLOBALS['TL_LANG']['tl_content']['fullsize_2'] = ['Großansicht/Neues Fenster', ''];
-$GLOBALS['TL_LANG']['tl_content']['image2_legend'] = 'Bildeinstellungen zweites Bild';
-
-
 $GLOBALS['TL_DCA']['tl_content']['palettes']['__selector__'][] = 'addImage_2';
-$GLOBALS['TL_DCA']['tl_content']['subpalettes']['addImage_2'] = 'singleSRC_2, size_2, imageUrl_2, fullsize_2, alt_2, imageTitle_2, caption_2';
+$GLOBALS['TL_DCA']['tl_content']['subpalettes']['addImage_2'] = 'singleSRC_2, size_2, fullsize_2, alt_2, imageTitle_2, caption_2';
 
 PaletteManipulator::create()
     ->addLegend('image2_legend', 'image_legend', PaletteManipulator::POSITION_AFTER)
