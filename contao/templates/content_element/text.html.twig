@@ -9,13 +9,15 @@
         {% if data.addImage_2 %}
             <figure class="images_container">
             {{ parent() }}
-                {{ contao_figure( data.singleSRC_2, data.size_2,
-                    { 
-                        metadata: { title: data.imageTitle_2, alt: data.alt_2, caption: data.caption_2 },
-                        enableLightbox: data.fullsize_2,
-                        options: { attr: { class: 'second_image' } } 
-                    }
-                ) }}
+                {% if data.singleSRC_2 %}            
+                    {{ contao_figure( data.singleSRC_2, data.size_2,
+                        { 
+                            metadata: { title: data.imageTitle_2, alt: data.alt_2, caption: data.caption_2 },
+                            enableLightbox: data.fullsize_2,
+                            options: { attr: { class: 'second_image' } } 
+                        }
+                    ) }}
+                {% endif %}
             </figure>
         {% else %}
             {{ parent() }}
