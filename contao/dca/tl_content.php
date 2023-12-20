@@ -75,3 +75,8 @@ PaletteManipulator::create()
     ->addLegend('image2_legend', 'image_legend', PaletteManipulator::POSITION_AFTER)
     ->addField('addImage_2', 'image2_legend', PaletteManipulator::POSITION_APPEND)
     ->applyToPalette('text', 'tl_content');
+
+PaletteManipulator::create()
+    ->addLegend('image2_legend', 'image_legend', PaletteManipulator::POSITION_AFTER)
+    ->addField('addImage_2', 'image2_legend', PaletteManipulator::POSITION_APPEND)
+    ->applyToPalette('image', 'tl_content');
