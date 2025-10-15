@@ -7,7 +7,7 @@
 {% block figure_component %}
 
         {% if data.addImage_2 %}
-            <figure class="images_container">
+            <div class="images_container">
             {{ parent() }}    
                 {{ contao_figure(
                     data.singleSRC_2, 
@@ -16,7 +16,7 @@
                         options: { attr: { class: 'second_image' } }
                     }
                 ) }}
-            </figure>
+            </div>
         {% else %}
             {{ parent() }}
         {% endif %}
